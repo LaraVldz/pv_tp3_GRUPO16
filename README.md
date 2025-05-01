@@ -8,7 +8,7 @@ INTEGRANTES / Usuario GitHub
 >SUILICE MAURICIO / Mauricio Suilice19
 >SURUGUAY JESUS IGNACIO / IgnacioJES
 >TEJERINA GUADALUPE ORIANA / guadalupetejerina
->VALEZ LARA MARIEL / LaraVldz
+>VALDEZ LARA MARIEL / LaraVldz
 
 Descripción del Trabajo Práctico 3:
--
+La aplicación permite gestionar una lista de tareas necesarias para llevar a cabo el trabajo práctico: se pueden agregar, visualizar, marcar como completadas y eliminar tareas.
