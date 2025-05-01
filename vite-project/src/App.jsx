@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import TaskInput from './components/TaskInput';
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import TaskList from './components/TaskList';
+
+import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -15,15 +15,30 @@ function App() {
     };
     setTasks([newTask, ...tasks]);
   };
+
+  const toggleTask = (id) => {
+    setTasks(tasks.map(task =>
+      task.id === id ? { ...task, completed: !task.completed } : task
+    ));
+  };
+
+  const deleteTask = (id) => {
+    setTasks(tasks.filter(task => task.id !== id));
+  };
+
   return (
     <>
       <div>
         <h1>Lista de Tareas</h1>
         <TaskInput onAdd={addTask} />
+        <TaskList 
+          tasks={tasks} 
+          onToggle={toggleTask} 
+          onDelete={deleteTask} 
+        />
       </div>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
