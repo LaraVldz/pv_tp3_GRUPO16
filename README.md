@@ -5,7 +5,7 @@ Grupo 16
 INTEGRANTES / Usuario GitHub
 
 >BALDELOMAR DARIAN / Darian-Balde
->SUILICE MAURICIO / Mauricio Suilice19
+>SUILICE LUCA MAURICIO / Mauricio Suilice19
 >SURUGUAY JESUS IGNACIO / IgnacioJES
 >TEJERINA GUADALUPE ORIANA / guadalupetejerina
 >VALDEZ LARA MARIEL / LaraVldz

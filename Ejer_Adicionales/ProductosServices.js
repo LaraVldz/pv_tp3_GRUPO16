@@ -39,3 +39,26 @@ function ordenarProductos() {
       console.log(`Producto: ${p.descripcion} - Precio: $${p.precio}`);
     });
 }
+function agregarProducto() {
+  console.log("5. ");
+  Productos.push({ descripcion: "Parlante Bluetooth", precio: 59000.90 });
+  console.log("Producto agregado.");
+  mostrarProductos();
+}
+
+function eliminarMasBarato() {
+  console.log("6. ");
+  if (Productos.length === 0) {
+    console.log("No hay productos para eliminar.");
+    return;
+  }
+
+  let indiceMin = 0;
+  Productos.forEach((p, i) => {
+    if (p.precio < Productos[indiceMin].precio) indiceMin = i;
+  });
+
+  const eliminado = Productos.splice(indiceMin, 1)[0];
+  console.log(`Producto eliminado: ${eliminado.descripcion} - Precio: $${eliminado.precio}`);
+  mostrarProductos();
+}
